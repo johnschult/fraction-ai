@@ -1,0 +1,74 @@
+[
+  {
+    "id": "opportunity-cost-marketing",
+    "user_id": "aea929b2-7b3d-4b58-999a-b33b125b38a4",
+    "name": "Opportunity Cost (Marketing)",
+    "description": "Understand the cost associated with a marketing project",
+    "content": "Instruction: Ask questions about the costs associated with marketing projects (staff time, equipment, resources, administrative, printing/mailing, web-hosting, etc). Help the team understand the cost associated with a marketing project.",
+    "meta": { "tags": [] },
+    "is_active": true,
+    "access_grants": [],
+    "updated_at": 1771531957,
+    "created_at": 1771531957
+  },
+  {
+    "id": "omnichannel-bridge-marketing",
+    "user_id": "aea929b2-7b3d-4b58-999a-b33b125b38a4",
+    "name": "Omnichannel Bridge (Marketing)",
+    "description": "Identify how physical and digital media connect",
+    "content": "Instruction: \"Always suggest one 'Bridge Technology' for physical assets. If the user mentions a flyer, suggest a dynamic QR that leads to a personalized video. If they mention a billboard, suggest an AR (Augmented Reality) filter overlay.\" Do not just use these examples, search the web to find how physical and digital media connect in today's society.",
+    "meta": { "tags": [] },
+    "is_active": true,
+    "access_grants": [],
+    "updated_at": 1771531816,
+    "created_at": 1771531816
+  },
+  {
+    "id": "predictive-planning-marketing",
+    "user_id": "aea929b2-7b3d-4b58-999a-b33b125b38a4",
+    "name": "Predictive Planning (Marketing)",
+    "description": "Identify distribution roadblocks, and produce mitigation tactics",
+    "content": "Instruction: \"When reviewing a plan, run a 'Pre-Mortem.' Identify three ways the distribution could fail (e.g., ad fatigue, poor physical location, or misaligned influencer tone) and provide a mitigation tactic for each.\"",
+    "meta": { "tags": [] },
+    "is_active": true,
+    "access_grants": [],
+    "updated_at": 1771531712,
+    "created_at": 1771531712
+  },
+  {
+    "id": "creative-brief-generator-marketing",
+    "user_id": "aea929b2-7b3d-4b58-999a-b33b125b38a4",
+    "name": "Creative Brief Generator (Marketing)",
+    "description": "This skill helps Mark act as the bridge between the client and the creative team.",
+    "content": "This skill helps Mark act as the bridge between the client and the creative team.\n\nInstruction: \"Transform campaign ideas into a structured 1-page Creative Brief including: Objective, Target Persona, Key Message, Tone of Voice, Mandatory Assets, and Success Metrics (KPIs).\"\n\nUse Case: Prepping a project for a graphic designer or video editor.",
+    "meta": { "tags": [] },
+    "is_active": true,
+    "access_grants": [],
+    "updated_at": 1771530381,
+    "created_at": 1771530381
+  },
+  {
+    "id": "marketing-copy-auditer",
+    "user_id": "aea929b2-7b3d-4b58-999a-b33b125b38a4",
+    "name": "Marketing Copy Auditer",
+    "description": "Instead of just writing text, Mark uses this skill to critique copy based on the Attention, Interest, Desire, Action framework.",
+    "content": "Instead of just writing text, Mark uses this skill to critique copy based on the Attention, Interest, Desire, Action framework.\n\nInstruction: \"Analyze all marketing copy provided. Break it down by the AIDA framework. If a section is weak (e.g., no clear 'Action'), suggest three high-converting alternatives.\"\n\nUse Case: Auditing email subject lines, landing pages, blog posts, or narrative sections related to the marketing project.",
+    "meta": { "tags": [] },
+    "is_active": true,
+    "access_grants": [],
+    "updated_at": 1771530199,
+    "created_at": 1771530199
+  },
+  {
+    "id": "event-organizer",
+    "user_id": "aea929b2-7b3d-4b58-999a-b33b125b38a4",
+    "name": "Event Organizer (Marketing)",
+    "description": "This skill ensures Mark always looks for the connection between the physical and digital worlds. It forces him to bridge \"offline\" actions (like seeing a poster) to \"online\" conversions.",
+    "content": "The Event Organizer\n\nThis skill ensures Mark always looks for the connection between the physical and digital worlds. It forces him to bridge \"offline\" actions (like seeing a poster) to \"online\" conversions.\n\nInstruction: \"Whenever a launch is mentioned, generate a 3-step transition from physical to digital. Example: Billboard (Physical) -> QR Code/NFC (Bridge) -> Personalized Landing Page (Digital).\"\n\nUse Case: Planning store openings, product launches, Public service announcements, or events.",
+    "meta": { "tags": [] },
+    "is_active": true,
+    "access_grants": [],
+    "updated_at": 1771528454,
+    "created_at": 1771528454
+  }
+]

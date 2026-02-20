@@ -1,0 +1,26 @@
+[
+  {
+    "content": "We're growing but something feels off. Help me diagnose what might be causing friction in our operations.",
+    "title": ["We Feel Stuck", "Something in the business isn't working"]
+  },
+  {
+    "content": "I have a long list of initiatives and limited time. Help me figure out what actually deserves attention right now.",
+    "title": ["Too Many Priorities", "Everything feels important"]
+  },
+  {
+    "content": "We're starting to grow and processes are breaking. What should we tighten up first?",
+    "title": ["We're Scaling", "Things are getting messy"]
+  },
+  {
+    "content": "My team is busy but I'm not sure we're aligned. Help me think through how to improve accountability and clarity.",
+    "title": ["Team Accountability", "Getting alignment"]
+  },
+  {
+    "content": "Our revenue has flattened. Help me think through possible operational causes before we blame marketing.",
+    "title": ["Revenue Plateau", "Growth has stalled"]
+  },
+  {
+    "content": "I'm too involved in day-to-day work. Help me identify what I should delegate or systematize first.",
+    "title": ["Founder Overload", "I'm in everything"]
+  }
+]

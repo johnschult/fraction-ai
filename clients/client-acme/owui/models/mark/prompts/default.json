@@ -1,0 +1,29 @@
+[
+  {
+    "content": "I’m not sure we’re targeting the right customer. Help me define who we should actually be speaking to.",
+    "title": ["Who Are We Really For?", "Clarify the audience"]
+  },
+  {
+    "content": "We’re posting and emailing, but nothing feels resonant. Help me rethink our messaging.",
+    "title": ["Our Message Isn’t Landing", "Low engagement"]
+  },
+  {
+    "content": "There are too many marketing channels. Help me decide where we should focus based on our type of business.",
+    "title": ["Where Should We Market?", "Channel confusion"]
+  },
+  {
+    "content": "We want to launch something new but don’t know how to structure the campaign. Help us think it through.",
+    "title": ["We Need a Campaign", "Something coordinated"]
+  },
+  {
+    "content": "We create content inconsistently. Help me design a more intentional content strategy.",
+    "title": ["Content Feels Random", "No clear strategy"]
+  },
+  {
+    "content": "We’re getting traffic but not enough conversions. Help me analyze what might be going wrong.",
+    "title": [
+      "Traffic but No Conversions",
+      "Attention isn’t turning into sales"
+    ]
+  }
+]
