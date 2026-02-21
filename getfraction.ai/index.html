@@ -342,8 +342,8 @@
     .step-indicator-track {
       position: absolute;
       left: 3px;
-      top: 6px;
-      bottom: 6px;
+      top: 20px;
+      bottom: 20px;
       width: 1px;
       background: var(--border);
     }
@@ -351,9 +351,10 @@
     .step-indicator-fill {
       position: absolute;
       left: 3px;
-      top: 6px;
+      top: 20px;
       width: 1px;
       height: 0%;
+      max-height: calc(100% - 40px);
       background: linear-gradient(to bottom, var(--mint), rgba(0,212,170,0.4));
       transition: height 0.35s ease;
     }
@@ -364,31 +365,28 @@
       gap: 14px;
       padding: 10px 0;
       cursor: default;
+      position: relative;
     }
 
     .step-dot {
       position: absolute;
-      left: 0;
+      top: 50%;
+      left: -18px;
+      transform: translateY(-50%);
       width: 7px;
       height: 7px;
       border-radius: 50%;
       background: var(--text-dim);
       border: 1px solid var(--border);
-      margin-left: -3px;
       transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
       flex-shrink: 0;
     }
 
-    .step-label:nth-child(1) .step-dot { top: 14px; }
-    .step-label:nth-child(2) .step-dot { top: 50%; transform: translateY(-50%); }
-    .step-label:nth-child(3) .step-dot { bottom: 14px; }
-
     .step-dot.active {
       background: var(--mint);
       box-shadow: 0 0 8px var(--mint-glow);
-      transform: scale(1.4);
+      transform: translateY(-50%) scale(1.4);
     }
-    .step-label:nth-child(2) .step-dot.active { transform: translateY(-50%) scale(1.4); }
 
     .step-label-text {
       font-size: 0.8rem;
@@ -673,10 +671,10 @@
     </div>
     <div class="container">
       <div class="hero-content">
-        <div class="hero-label">Collaborative Self-Hosted AI &middot; Built for Small Business</div>
+        <div class="hero-label">Collaborative Private AI &middot; Built for Small Business</div>
         <h1>The quiet machine<br />behind your <em>operations.</em></h1>
         <p class="hero-sub">
-          Most teams use AI alone &mdash; one conversation at a time, losing everything when the chat closes. We build a shared AI workspace for your whole organization: persistent memory, collective context, and automation that compounds. Running on your infrastructure, owned by you.
+          Most teams use AI alone &mdash; one conversation at a time, losing everything when the chat closes. We build a shared AI workspace for your whole organization: persistent memory, collective context, and automation that compounds. Your AI, your automation &mdash; private and never shared.
         </p>
         <a href="#services" class="btn-primary">
           What we do
@@ -694,7 +692,7 @@
       <div class="what-sticky-left">
         <div class="section-label">What we do</div>
         <h2 class="section-heading">Systems, not software.<br />Outcomes, not access.</h2>
-        <p class="section-sub">AI shouldn't reset every time someone opens a new tab. We build shared environments where context persists, knowledge accumulates, and your whole team works with AI &mdash; not just whoever typed last. Deployed to your infrastructure, owned by you.</p>
+        <p class="section-sub">AI shouldn't reset every time someone opens a new tab. We build shared environments where context persists, knowledge accumulates, and your whole team works with AI &mdash; not just whoever typed last. Privately hosted for your business alone &mdash; you own the AI, the automations, and everything in between.</p>
 
         <div class="step-indicator" id="step-indicator">
           <div class="step-indicator-track"></div>
@@ -756,7 +754,7 @@
               </svg>
             </div>
             <h3>Consulting that ships</h3>
-            <p>We design, deploy, and maintain your own hosted AI instance. You own it outright — no vendor lock-in, no third-party API dependency. Just a working system on your infrastructure, fully delivered.</p>
+            <p>We design, deploy, and maintain your AI environment — the agents, the automations, the workflows. You own it outright. Private hosting dedicated to your business, never shared with other clients. No lock-in, fully delivered.</p>
           </div>
         </div>
 
@@ -798,13 +796,18 @@
     <div class="container">
       <img src="logo-dark.png" alt="Fraction AI" />
       <div class="footer-right">
-        <a href="mailto:hello@getfraction.ai">hello@getfraction.ai</a>
-        <span>&copy; 2025 Fraction AI &middot; getfraction.ai</span>
+        <a href="mailto:hello@getfraction.ai" style="display:inline-flex;align-items:center;gap:6px;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hello@getfraction.ai
+        </a>
+        <span>&copy; <span id="footer-year"></span> Fraction AI</span>
       </div>
     </div>
   </footer>
 
   <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
     // ── Scroll progress bar ──
     const progressBar = document.getElementById('scroll-progress');
 
