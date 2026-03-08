@@ -1,0 +1,22 @@
+- description: "T01 - Grant Narrative Generation"
+  vars:
+    message:
+      "We are applying for the Youth Tech Grant. Our program provides AI
+      tutoring to 50 low-income students. Our mission is bridging the digital
+      divide. Draft a 500-word narrative for the Program Impact section."
+  assert:
+    - type: not-contains
+      value: "I can help with that"
+    - type: not-contains
+      value: "Here is a draft"
+    - type: not-contains
+      value: "Here's a draft"
+    - type: javascript
+      value: output.length > 1000
+    - type: llm-rubric
+      value:
+        "Did Riggs provide the actual grant narrative immediately without
+        preamble, outlines, or requests for more information? Fail if he
+        provides an outline instead of a full narrative, asks clarifying
+        questions without also providing a draft, or uses meta-talk like 'I can
+        help with that'."

@@ -1,0 +1,17 @@
+providers:
+  - id: openai:chat:qwen2.5:7b-instruct
+    config:
+      apiBaseUrl: http://192.168.68.72:11434/v1
+      apiKey: ollama
+
+prompts:
+  - file://../clients/client-acme/owui/models/riggs/prompts/system.md
+
+defaultTest:
+  options:
+    provider: anthropic:claude-sonnet-4-6
+
+tests:
+  - file://tests/t01-grant-narrative.yaml
+  - file://tests/t03-donor-acknowledgment.yaml
+  - file://tests/t06-meeting-notes.yaml

@@ -1,0 +1,26 @@
+- description: "T03 - Donor Acknowledgment Letter"
+  vars:
+    message: >
+      Donor: Robert Chen. Gift: $1,200. History: Board member for 2 years,
+      attends every gala. Write a thank-you letter from our Executive Director
+      to Robert. This is a peer-to-peer letter between two organizational
+      leaders. It should feel personal and specific, not like a form letter.
+      Reference his board service and gala attendance directly. Do not use
+      placeholder text inside the body of the letter. Sign off as [[Executive
+      Director Name]], [[Organization Name]]. The tone should read like: 'Your
+      two years on the board have shaped how we think about X — not just as a
+      donor, but as an architect of it.'
+  assert:
+    - type: not-contains
+      value: "I can help with that"
+    - type: icontains
+      value: "Robert Chen"
+    - type: icontains
+      value: "1,200"
+    - type: javascript
+      value: output.length > 200
+    - type: llm-rubric
+      value:
+        "Does the letter sound like genuine peer-to-peer executive
+        communication? Fail if it contains placeholder text inside the body,
+        uses generic filler phrases, or reads like a form letter template."

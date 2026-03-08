@@ -1,0 +1,30 @@
+name: Promptfoo Eval
+
+on:
+  workflow_dispatch:
+    inputs:
+      config:
+        description: "Test suite to run"
+        required: true
+        default: "promptfooconfig"
+        type: choice
+        options:
+          - promptfooconfig
+          - configs/phase1
+          - configs/phase2
+          - configs/full
+
+jobs:
+  eval:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run promptfoo eval
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        working-directory: evals
+        run: |
+          promptfoo eval --config ${{ inputs.config }}.yaml --no-cache

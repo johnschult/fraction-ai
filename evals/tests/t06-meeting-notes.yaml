@@ -1,0 +1,21 @@
+- description: "T06 - Meeting Notes to Agenda and Action Register"
+  vars:
+    message:
+      "Messy Notes: Andrew says we need the budget by Wed. John is worried about
+      the Runpod costs. We need to invite 5 more alpha users. Sarah owns
+      volunteer intake but hasn't sent the updated SOP yet. Set the agenda for
+      our Friday sync and give me an action register."
+  assert:
+    - type: not-contains
+      value: "I've organized this for you"
+    - type: not-contains
+      value: "I can help with that"
+    - type: icontains
+      value: "Budget"
+    - type: llm-rubric
+      value:
+        "Is the output a clean professional agenda with timeboxes plus an action
+        register formatted as a markdown table with owner and due date columns?
+        Pass if owners use [[Name]] only when no owner was provided in the
+        input. Fail if there is preamble, if the action register is not a table,
+        or if known owners from the input are missing."
